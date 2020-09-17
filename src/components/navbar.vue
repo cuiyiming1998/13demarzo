@@ -20,19 +20,26 @@
         <router-link to='/'>购物车</router-link>
       </el-menu-item>
       <el-menu-item class='item'>
-        <router-link to='/login'>登录</router-link>
+        <router-link to='/login' v-if='!isLogined'>登录</router-link>
+        <a v-else>退出登录</a>
       </el-menu-item>
   </el-menu>
 </template>
 
 <script>
+import { lStorage } from '../utils/utils'
+
 export default {
   data: () => {
     return {
+      isLogined: false
     }
   },
 
-  mounted () {
+  created () {
+    if (lStorage.get('userInfo')) {
+      this.inLogined = true
+    }
   }
 }
 </script>

@@ -2,15 +2,18 @@
   <div id="app">
     <navbar/>
     <router-view/>
+    <foot-bottom/>
   </div>
 </template>
 
 <script>
 import navbar from './components/navbar'
+import footBottom from './components/foot-bottom'
 export default {
   name: 'App',
   components: {
-    'navbar': navbar
+    'navbar': navbar,
+    'foot-bottom': footBottom
   }
 }
 </script>
