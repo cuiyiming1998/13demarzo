@@ -25,6 +25,7 @@
         <img :src='item.path' alt='资源请求失败，请刷新网页' />
       </div>
     </div>
+    <el-backtop style='color: black'></el-backtop>
   </div>
 </template>
 
