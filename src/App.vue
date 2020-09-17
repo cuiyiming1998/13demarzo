@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <navbar/>
-    <router-view/>
-    <foot-bottom/>
+    <navbar class="navbar"/>
+    <router-view class="main"/>
+    <foot-bottom class="footer"/>
   </div>
 </template>
 
@@ -24,6 +24,14 @@ export default {
   padding: 0;
 }
 #app {
+  padding: 0;
+  margin: 0;
+  display: flex!important;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  min-width: 780px;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

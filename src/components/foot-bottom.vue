@@ -1,5 +1,5 @@
 <template>
-  <div class='foot'>
+  <footer class='foot'>
     <div class='links'>
       <router-link to='/' class='link'>主页</router-link>
       <router-link to='/' class='link'>产品</router-link>
@@ -13,7 +13,7 @@
     <div class='name'>
       13DE MARZO
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -26,31 +26,37 @@ export default {
 .foot {
   box-sizing: border-box;
   width: 100%;
-  height: 250px;
-  padding: 0px 200px;
+  height: 30%;
+  min-height: 180px;
+  min-width: 980px;
+  padding: 0px 10%;
   background: #222222;
   color: #dedede;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr;
   a {
     color: white;
     text-decoration: none;
     font-weight: bold;
   }
   .links {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     .link {
-      margin: 5px 0;
+      margin-top: 20px;
     }
   }
   .copyright {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    padding-bottom: 30px;
     color: #8b919d;
   }
   .name {
@@ -59,7 +65,7 @@ export default {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    font-size: 6rem;
+    font-size: 6em;
     color: gray;
   }
 }

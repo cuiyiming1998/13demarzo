@@ -1,6 +1,6 @@
 
 <template>
-  <div>
+  <div class='main'>
     <loginbox v-if="option === '登录'"></loginbox>
     <signupbox v-else></signupbox>
   </div>
@@ -28,5 +28,4 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
 </style>
